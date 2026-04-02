@@ -1,0 +1,21 @@
+{
+  "name": "freelance-court",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "node --loader ts-node/esm deploy/deployScript.ts",
+    "seed":   "node --loader ts-node/esm deploy/seedJobs.ts",
+    "dev":    "cd frontend && npm run dev",
+    "build":  "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "genlayer-js": "latest"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  }
+}
